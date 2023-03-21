@@ -16,6 +16,7 @@ app.use(bodyparser.urlencoded({ extended: false }))
 app.use(bodyparser.json())
 app.use(express.static(path.join(__dirname,'./public')))
 app.use(router)
+// IP ADDRESS - 192.168.29.28
 
 const server = app.listen(process.env.PORT, () => {
     console.log(`Sever is running on port ${process.env.PORT}`)
